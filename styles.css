@@ -200,3 +200,10 @@ nav ul li a:hover{
     transition: 0.6s;
     filter: brightness(10%);
 }
+
+/* getInvolved page styles */
+
+.calendar {
+    transform: translateY(100px);
+    margin-left: 230px;
+}
