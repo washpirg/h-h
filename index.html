@@ -5,45 +5,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hunger & Homelessness</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <div class="background">
-        <div class="navbar">
-            <nav>
-                <header>Hunger & Homelessness</header>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="index.html">MEET THE TEAM</a></li>
-                    <li><a href="getInvolved.html">GET INVOLVED</a></li>
-                    <li><a href="index.html">CONTACT US</a></li>
-                </ul>
-            </nav>
-        </div>
-        <video id="background-video" autoplay loop muted poster="./images/H&Hbackgroundpic4.webp">
-        <source src="./videos/H&Hbackgroundvidb&w.mp4" type="video/mp4">
-        </video>
-
+    <div class="navbar">
+        <nav>
+            <header>Hunger & Homelessness</header>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="meetTheTeam.html">MEET THE TEAM</a></li>
+                <li><a href="getInvolved.html">GET INVOLVED</a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="homeBackground">
+        <img id="mainPic" 
+            src="./images/H&Hbackgroundpic3.png" height="850" width="100%">
+        <h2>Mitigating Hunger & Food Insecurity in Seattle Through Student Action</h2>
+        <img id="secondaryPic"
+            src="./images/olympia.jpeg" height="720" width="1000">
+        <a href="">Instagram</a>
+        <a href="">TikTok</a>
+        <a href="">YouTube</a>
     </div>
 
     <div class="aboutOurCampaign">
         <h1>About Our Campaign</h1>
         <p>
-            The Hunger and Homelessness campaign strives to acknowledge,
+            The Hunger and Homelessness campaign is entirely
+            student run and strives to acknowledge,
             empower, and improve the livelihood of individuals 
-            <br> struggling with home or food insecurities. We plan food 
+            struggling with home or food insecurities. We plan food 
             drives, tabling events, and even go door-to-door 
-            <br> to spread awareness and collect donations!
+            to spread awareness and collect donations!
         </p>
-        <a href="#" class="btn">Get to know us!</a>
+        <a href="meetTheTeam.html" class="btn">Get to know us!</a>
+    </div>
+
+    <div class="statistics">
+        <h1>Did you know?</h1>
+        <h2>Homelessness in Seattle has been rising...</h2>
+        <div class="container">
+            <div class="counter-container">
+                <div class="counter">
+                    <img src="./images/icons/2016.png" alt="timer" srcset="" class="icon">
+                    <h3 data-target="10688" class="count">0</h3>
+                    <h6></h6>
+                </div>
+                <div class="counter">
+                    <img src="./images/icons/2018.png" alt="Coffee" srcset="" class="icon">
+                    <h3 data-target="12112" class="count">0</h3>
+                    <h6></h6>
+                </div>
+                <div class="counter">
+                    <img src="./images/icons/2020.png" alt="night" srcset="" class="icon">
+                    <h3 data-target="12751" class="count">0</h3>
+                    <h6></h6>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="volunteerOpps">
-        <h1>Volunteer Opportunities</h1>
+        <h1>Be part of the solution.</h1>
         <p>
             Here are some of the organizations that we are partnered with.
             <br> You can help out however much you want, according to your 
@@ -52,17 +81,18 @@
 
         <div class="grid-items-wrapper">
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/AttainHousing.jpeg)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/AttainHousing.jpeg)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Attain Housing
+                        Partnering with homeless families by providing 
+                        affordable housing, practical case management, and hope.
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/CompassHousingAlliance.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/CompassHousingAlliance.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
@@ -74,11 +104,11 @@
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/Fare\ Start.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/Fare\ Start.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Transforms lives & disrupts poverty through food, 
+                        Disrupts poverty through food, 
                         life skills, and job training. Get involved through 
                         individual or team volunteering opportunities!
                     </div>
@@ -86,29 +116,30 @@
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/FoodLifeline.jpeg)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/FoodLifeline.jpeg)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
                         Food redistribution and delivery service across
-                        Western Washington. Advocate for policy & structural
-                        change to mitigate hunger and racial inequity!
+                        Western Washington. Advocate to mitigate hunger!
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/ImmanuelHousing.jpeg)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/ImmanuelHousing.jpeg)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Immanuel Housing
+                        "Our mission is to alleviate the effects of poverty, hunger, 
+                        homelessness and addiction by providing community-based social 
+                        services to those in need."
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/UW\ food\ bank.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/UW\ food\ bank.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
@@ -119,66 +150,75 @@
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/Northwest\ Harvest.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/Northwest\ Harvest.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Udistrict Food Bank 
+                        We are an anti-oppression food justice
+                        organization that aims to change 
+                        policies that perpetuate hunger, poverty, and racism. 
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/Plymouth\ Housing.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/Plymouth\ Housing.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
                         Our mission is to develop homes for individuals
-                        in need. We want to mitigate the unnecessary
+                        in need. We mitigate the unnecessary
                         processes that exclude many people from the vital housing they need. 
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/Family\ Works.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/Family\ Works.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        We help individuals in need 
+                        We help individuals
                         through food donation servicees. 
-                        Help out by handing out flyers or participating in daily food
+                        Help out by participating in daily food
                         bank activities! 
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/YouthCare.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/YouthCare.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Udistrict Food Bank 
+                        We work to end youth homelessness & ensure that 
+                        young people are valued for who they are and empowered to 
+                        achieve their potential.
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/Ballard\ Food\ Bank.jpeg)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/Ballard\ Food\ Bank.jpeg)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Udistrict Food Bank 
+                        Our mission is to bring food and hope to our neighbors...
+                        because there can be enough for everyone. 
+                        We provide access to nutritious food 
+                        through our food bank.
                     </div>
                 </div>
             </div>
 
             <div class="grid-item-wrapper">
-                <div class="grid-img-background" style="background-image:url(images/Elizabeth\ Gregory\ Home.png)"></div>
+                <div class="grid-img-background" style="background-image:url(images/orgs/Elizabeth\ Gregory\ Home.png)"></div>
 
                 <div class="img-text-wrapper">
                     <div class="subtitle">
-                        Udistrict Food Bank 
+                        We provide a welcoming and respectful 
+                        refuge where women who are experiencing homelessness or trauma 
+                        have access to a caring community.
                     </div>
                 </div>
             </div>
@@ -192,7 +232,7 @@
 </body>
 
 <script>
-    const gridItems = document.querySelectorAll('.grid-item-wrapper')
+    const gridItems = document.querySelectorAll('.grid-item-wrapper');
     // Run this process for each grid item:
     gridItems.forEach(gridItem => {
         gridItem.addEventListener('mouseover', () => {
@@ -203,6 +243,28 @@
             gridItem.childNodes[1].classList.remove('img-darken');
         })
     })
+</script>
+    
+<script>
+    const counters = document.querySelectorAll('.count');
+    const speed = 200;
+
+    counters.forEach((counter) => {
+    const updateCount = () => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const count = parseInt(counter.innerText);
+        const increment = Math.trunc(target / speed);
+
+        if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 1);
+        } else {
+        counter.innerText = target;
+        }
+    };
+    updateCount();
+    });
+
 </script>
 
 

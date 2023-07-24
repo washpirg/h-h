@@ -1,16 +1,16 @@
 *{
     margin: 0px;
     padding: 0;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
-    background-color: #F1E9D2;
+    background-color: white
 }
 
 .navbar {
     position: fixed;
     width: 100%;
-    transition: 0.6s;
     background-color: #8c403c;
     z-index: 1;
 }
@@ -28,14 +28,13 @@ nav {
 
 nav header{
     font-size: 25px;
-    color: #e7e2d4;
+    color: white;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    transition: border-bottom 0.5s;
 }
 
 nav ul li a{
@@ -50,29 +49,41 @@ nav ul li a:hover{
     color: #e7e2d4;
 }
 
-/* background video style on home page */
+/* background image style on home page */
 
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+.homeBackground {
+    background-color: rgb(221, 242, 251);
+}
+
+.homeBackground #mainPic {
     position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    filter: brightness(25%);
+}
+
+.homeBackground #secondaryPic {
+    transform: translateY(-380px);
+    margin-left: 16%;
+}
+
+.homeBackground h2 {
+    color: rgb(212, 201, 201);
+    position: absolute;
+    font-size: 55px;
+    transform: translateY(-630px);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* button styles */ 
 .btn {
     display: inline-block;
     padding: 14px 28px;
-    background-color: #F1E9D2;
-    border: 2px solid black;
-    border-color: #7f312d;
+    background-color: white;
+    border: 2px solid rgb(17, 76, 108);
     font-size: 1.5rem;
     text-decoration: none;
-    color:#7f312d;
+    color: rgb(17, 76, 108);
     border-radius: 5px;
     transition: background 0.5s;
     text-align: center;
@@ -80,19 +91,24 @@ nav ul li a:hover{
 }
 
 .btn:hover {
-    background-color:#8c403c;
+    background-color: rgb(36, 103, 139);;
     color:#f6f6f6;
     text-align: center;
 }
-
 
 /* main content styles on home page */
 
 .aboutOurCampaign {
     font-size: 25px;
     padding-bottom: 80px;
-    background-color: #bf8d4e;
-    transform: translateY(-5px);
+    background-color: #cb9c63;
+    transform: translateY(-200px);
+    position: relative;
+}
+
+.aboutOurCampaign h3 {
+    transform: translateY(-135px);
+    text-align: center;
 }
 
 .aboutOurCampaign h1 {
@@ -106,24 +122,72 @@ nav ul li a:hover{
     padding-top: 22px;
     line-height: 38px;
     color: black;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .aboutOurCampaign a {
     margin-left: 41%;
     position: relative;
-    background-color: #bf8d4e;
-    border-color: black;
-    color: black;
+    background-color: rgb(36, 103, 139);
+    border-color: rgb(24, 96, 134);
+    color: white;
     
 }
 
 .aboutOurCampaign a:hover {
-    background-color: black;
-    color: #F1E9D2;
+    background-color: rgb(12, 91, 134);
+}
+
+/* home page animated counter styles */
+.statistics {
+    transform: translateY(-200px);
+}
+
+.statistics h1 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 10%;
+}
+
+.statistics h2 {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter {
+    text-align: center;
+}
+
+.counter h3 {
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.counter h6 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
 }
 
 .volunteerOpps {
-    transform: translateY(150px);
+    transform: translateY(-80px);
     font-size: 25px;
     padding-bottom: 10%;
 }
@@ -139,7 +203,7 @@ nav ul li a:hover{
 }
 
 .volunteerOpps a {
-    transform: translateX(630px);
+    transform: translateX(615px);
 }
 
 /* home page grid styles */
@@ -155,7 +219,10 @@ nav ul li a:hover{
 
 .grid-item-wrapper {
     position: relative;
-    padding-top: 10px;
+    border-style: border-box;
+    border: 1.8px solid rgb(232, 229, 229);
+    margin-top: 3%;
+    box-shadow: 6px 4px 8px -2px;
 }
 
 .grid-img-background {
@@ -201,9 +268,152 @@ nav ul li a:hover{
     filter: brightness(10%);
 }
 
+
 /* getInvolved page styles */
 
 .calendar {
-    transform: translateY(100px);
-    margin-left: 230px;
+    transform: translateY(82px);
+    text-align: center;
+    background-color: rgb(229, 241, 246);
+}
+
+.calendar iframe {
+    padding-bottom: 3%;
+}
+
+.calendar h1 {
+    text-align: center;
+    font-size: 55px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+
+.calendar h2 {
+    line-height: 38px;
+    transform: translateY(30px);
+    color: rgb(12, 91, 134);
+}
+
+.calendar p {
+    font-size: 35px;
+    padding-top: 5%;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.calendar .aboutOurCampaign {
+    transform: translateY(50px);
+    background-color: rgb(177, 158, 177);
+}
+
+.moreAboutOurOrgs {
+    transform: translateY(220px);
+    font-size: 20px;
+}
+
+.moreAboutOurOrgs h1 {
+    text-align: center;
+    color: rgb(12, 91, 134);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.moreAboutOurOrgs h2 {
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    padding-top: 20px;
+    margin-left: 70px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #8c403c;
+    color: white;
+    height: 60px;
+}
+
+td {
+    text-align: center;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: rgb(196, 195, 195);}
+
+/* Meet The Team page styles */
+.meetTeamBackground {
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    transform: translateY(-100px);
+    object-fit: cover;
+    
+}
+
+.mainContent h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.picContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12%;
+  }
+  
+  .picContainer .profileImage {
+    width: 50%;
+  }
+
+.profileImage {
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
+
+.profileImage figcaption {
+    text-align: left;
+    margin-right: 27%;
+    font-size: 19px;
+}
+  
+
+/* Contact Us page styles */
+.connectContent {
+    transform: translateY(70px);
+    background-color: #f6dbba;
+    padding: 10%;
+    text-align: center;
+}
+
+.connectContent h1 {
+    font-size: 55px;
+}
+
+.connectContent h2 {
+    padding-top: 5%;
+}
+
+.connectContent h3 {
+    padding-top: 3%;
 }
