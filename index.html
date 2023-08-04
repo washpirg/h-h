@@ -26,16 +26,67 @@
     <div class="homeBackground">
         <img id="mainPic" 
             src="./images/H&Hbackgroundpic3.png" height="850" width="100%">
-        <h2>Mitigating Hunger & Food Insecurity in Seattle Through Student Action</h2>
+        <h2>Mitigating Home & Food Insecurity in Seattle Through Student Action</h2>
         <img id="secondaryPic"
-            src="./images/olympia.jpeg" height="720" width="1000">
-        <a href="">Instagram</a>
-        <a href="">TikTok</a>
-        <a href="">YouTube</a>
+            src="./images/olympia4.jpeg" height="650" width="1200">
+        <p>
+            Our new legislative branch allows you to gain real world
+            experience fighting and advocating for vital bills in front 
+            of our senators.
+        </p>
     </div>
 
+    <div class="explore-what-we-do">
+        <h2>Explore Our Three Branches</h2>
+
+        <div class="grid-items-wrapper">
+            <div class="grid-item-wrapper">
+                <div class="img-background" style="background-image:url(images/legislativeBranch.jpg)"></div>
+    
+                <div class="img-text-wrapper">
+                    <div class="subtitle"> 
+                        Legislative Branch 
+                        <br><br><br>
+                        Raise your voice & advocate for bills that help our homeless community. 
+                        We take trips to Olympia to lobby senators!
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid-item-wrapper">
+                <div class="img-background" style="background-image:url(images/volunteeringBranch.jpg)"></div>
+    
+                <div class="img-text-wrapper">
+                    <div class="subtitle">
+                        Volunteering Branch 
+                        <br><br><br>
+                        Participate in hands-on work through our volunteering 
+                        opportunities. Help out a local food bank, or go 
+                        door-to-door doing community service and outreach projects!
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid-item-wrapper">
+                <div class="img-background" style="background-image:url(images/educationBranch.png)"></div>
+    
+                <div class="img-text-wrapper">
+                    <div class="subtitle">
+                        Educational Branch 
+                        <br><br><br>
+                        Want to learn more about hunger and houselessness in Seattle? 
+                        Participate in one of our upcoming workshops, or attend
+                        a presentation hosted by our very own leadership team!
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    
     <div class="aboutOurCampaign">
-        <h1>About Our Campaign</h1>
+        <h1>Our Mission</h1>
         <p>
             The Hunger and Homelessness campaign is entirely
             student run and strives to acknowledge,
@@ -45,30 +96,6 @@
             to spread awareness and collect donations!
         </p>
         <a href="meetTheTeam.html" class="btn">Get to know us!</a>
-    </div>
-
-    <div class="statistics">
-        <h1>Did you know?</h1>
-        <h2>Homelessness in Seattle has been rising...</h2>
-        <div class="container">
-            <div class="counter-container">
-                <div class="counter">
-                    <img src="./images/icons/2016.png" alt="timer" srcset="" class="icon">
-                    <h3 data-target="10688" class="count">0</h3>
-                    <h6></h6>
-                </div>
-                <div class="counter">
-                    <img src="./images/icons/2018.png" alt="Coffee" srcset="" class="icon">
-                    <h3 data-target="12112" class="count">0</h3>
-                    <h6></h6>
-                </div>
-                <div class="counter">
-                    <img src="./images/icons/2020.png" alt="night" srcset="" class="icon">
-                    <h3 data-target="12751" class="count">0</h3>
-                    <h6></h6>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="volunteerOpps">
@@ -226,7 +253,6 @@
 
         </div>
         <a href="getInvolved.html" class="btn">Get Involved!</a>
-
     </div>
 
 </body>
@@ -245,27 +271,6 @@
     })
 </script>
     
-<script>
-    const counters = document.querySelectorAll('.count');
-    const speed = 200;
-
-    counters.forEach((counter) => {
-    const updateCount = () => {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const count = parseInt(counter.innerText);
-        const increment = Math.trunc(target / speed);
-
-        if (count < target) {
-        counter.innerText = count + increment;
-        setTimeout(updateCount, 1);
-        } else {
-        counter.innerText = target;
-        }
-    };
-    updateCount();
-    });
-
-</script>
 
 
 </html>
