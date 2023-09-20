@@ -90,7 +90,8 @@ nav ul li a:hover{
     color: #f1f1f1; /* Grey text */
     padding: 25px; 
     font-weight: 400;
-    width: 1150px;
+    /* width: 1150px; */
+    width: 76.5%;
     position: absolute;
     margin-left: 9%;
     font-size: 30px;
@@ -170,7 +171,7 @@ nav ul li a:hover{
 .aboutOurCampaign a {
     margin-left: 41%;
     position: relative;
-    background-color: rgb(36, 103, 139);
+    background-color: rgb(61, 121, 154);
     border-color: rgb(24, 96, 134);
     color: white;
     
@@ -196,7 +197,7 @@ nav ul li a:hover{
 }
 
 .volunteerOpps a {
-    transform: translateX(615px);
+    margin-left: 41%;
 }
 
 /* home page grid styles */
