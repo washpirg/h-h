@@ -1,0 +1,1 @@
+The Hunger and Homelessness campaign is entirely student run and strives to acknowledge, empower, and improve the livelihood of individuals struggling with home or food insecurities. We plan food drives, tabling events, and even go door-to-door to spread awareness and collect donations!
